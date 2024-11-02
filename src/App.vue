@@ -1,5 +1,8 @@
 <template>
-  <div id="app">
+  <div v-if="isMobile" id="error-msg">
+    <h1>Sorry, this site is not ready for mobile devices. Please visit on your computer!</h1>
+  </div>
+  <div v-else id="app">
     <nav>
       <router-link to="/">Home</router-link>
       <router-link to="/academics">Academics</router-link>
@@ -12,8 +15,29 @@
 </template>
 
 <script lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue';
 export default {
   name: 'App',
+  setup() {
+    const isMobile = ref(false);
+
+    // Function to check if the screen is mobile-sized
+    const checkIfMobile = () => {
+      isMobile.value = window.innerWidth < 869;
+    };
+
+    // Run check on component mount and update on window resize
+    onMounted(() => {
+      checkIfMobile();
+      window.addEventListener('resize', checkIfMobile);
+    });
+
+    onUnmounted(() => {
+      window.removeEventListener('resize', checkIfMobile);
+    });
+
+    return { isMobile };
+  },
 };
 </script>
 
@@ -44,6 +68,13 @@ nav a {
 html, body {
   height: 100%;
   background-color: #ede8d0;
+}
+
+error-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 #app {
