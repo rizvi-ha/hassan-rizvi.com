@@ -5,6 +5,7 @@
       <router-link to="/academics">Academics</router-link>
       <router-link to="/projects">Projects</router-link>
       <router-link to="/work-experience">Work Experience</router-link>
+      <router-link to="/contact">Contact</router-link>
     </nav>
     <router-view />
   </div>
@@ -40,8 +41,25 @@ nav a {
   font-family: 'Marcellus', sans-serif;
 }
 
-body {
+html, body {
+  height: 100%;
   background-color: #ede8d0;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex: 1;
+}
+
+.router-link-active {
+  font-weight: bold;
+  color: #6e632e; 
+  border-bottom: 2px solid #6e632e;
 }
 
 </style>

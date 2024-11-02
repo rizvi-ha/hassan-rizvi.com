@@ -103,8 +103,8 @@ export default defineComponent({
         },
         {
 	  title: 'hassan-rizvi.com',
-	  link: '#',
-	  description: 'This website! Build using Vue.js and TypeScript, as you can tell this was pretty hastily thrown together but I think it\'s a nice way to display my interests and experiences.', 
+	  link: 'https://github.com/rizvi-ha/hassan-rizvi.com/',
+	  description: 'This website! Built using Vue.js and TypeScript, as you can tell this was pretty hastily thrown together but I think it\'s a nice way to display my interests and experiences.', 
 	  images: [require('@/assets/website.png')],
         },
         {
@@ -204,7 +204,7 @@ methods: {
 .title-container {
   text-align: center;
   margin-bottom: 1rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .projects {
