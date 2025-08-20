@@ -3,7 +3,7 @@
     <div class="text-content">
       <h1>Hassan Rizvi</h1>
       <p>I'm a currently a Computer Science student at UCLA (with some courses in Mechanical Engineering as well)</p>
-      <p>My professional interests include software engineering, developer tooling, CI/CD, machine learning, embedded software, and more!</p>
+      <p>My professional interests include software engineering, cryptography, developer tooling, machine learning, embedded software, and more!</p>
       <p>My personal interests include studying Mandarin, reading, gardening, building mechanical keyboards, and exploring LA's restaurant scene (and cats ;P)</p>
     </div>
 	<img :src="require('@/assets/cat.jpg')" alt="Portfolio Image" class="portfolio-image" />
