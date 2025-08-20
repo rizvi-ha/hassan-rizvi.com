@@ -3,6 +3,17 @@
     <h1>Work Experience</h1>
     <div class="work-entry">
       <div class="entry-content">
+        <h2>Amazon Web Services, <i>Software Engineering Intern</i></h2>
+        <p>Santa Monica, CA | June 2025 - September 2025</p>
+	<p>○ Built an automated analytics pipeline in AWS Glue to transform raw malware scan data into Parquet datasets with file metadata, threat status, and scan order, enabling large-scale evaluation of threat prioritization strategies. </p> 
+	<p>○ Collaborated with AWS security engineers to develop heuristic threat-scoring methods from file metadata, reordering malware scan manifests and achieving a 2.6× faster average threat detection than baseline. </p> 
+	<p>○ Developed an end-to-end ML workflow using SageMaker + XGBoost to assign threat-likelihood scores and reprioritize scans, measuring both classification accuracy and detection speed improvements. </p> 
+	<p>○ Engineered production-ready infrastructure with integrated CI/CD pipelines in AWS CDK, deploying to GuardDuty’s production environment, processing live EC2 malware scans to benchmark and compare multiple heuristic and ML approaches. </p> 
+      </div>
+      <img :src="require('@/assets/aws.png')" alt="AWS image" class="resume-image" />
+    </div>
+    <div class="work-entry">
+      <div class="entry-content">
         <h2>Ultima Genomics, <i>Software Engineering Intern</i></h2>
         <p>Fremont, CA | June 2024 - September 2024</p>
         <p>○ Developed and integrated a thorough testing suite for an alerts API and internal dashboard, implementing 140+ unit and integration tests, ensuring reliability through automatic GitHub CI/CD hooks, reducing deployment errors by 100%.</p>
